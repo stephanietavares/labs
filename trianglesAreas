@@ -4,12 +4,12 @@
 
 **/
 
-package test1;
+package lab1;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Test_2 {
+public class Lab2 {
 	
 public static void main(String[] args) {
 	
