@@ -1,0 +1,108 @@
+/** O código deve realizar a verificação de quanto tempo o usuário ficou com o carro estacionado e retornar o valor devido,
+sendo cobrado R$20,00 por hora e R$100,00 a diária
+**/
+
+package entity;
+
+import java.util.Scanner;
+
+public class Estacionamento {
+
+	private static int placa, horarioEntrada, horarioSaida;
+	private static Integer hora = 20;
+	private Integer diaria = 100;
+
+	public Estacionamento() {
+
+	}
+
+	@Override
+	public String toString() {
+		return "estacionamento [ vagasLivres=" + ", diaria=" + diaria + "]";
+	}
+
+	public static int getPlaca() {
+		return placa;
+	}
+
+	public static void setPlaca(int placaA) {
+		Estacionamento.placa = placa;
+	}
+
+	public static int getHorarioEntrada() {
+		return horarioEntrada;
+	}
+
+	public static void setHorarioEntrada(int horarioEntrada) {
+		Estacionamento.horarioEntrada = horarioEntrada;
+	}
+
+	public static int getHorarioSaida() {
+		return horarioSaida;
+	}
+
+	public static void setHorarioSaida(int horarioSaida) {
+		Estacionamento.horarioSaida = horarioSaida;
+	}
+
+	public static Integer getHora() {
+		return hora;
+	}
+
+	public static void setHora(Integer hora) {
+		Estacionamento.hora = hora;
+	}
+
+	public Integer getDiaria() {
+		return diaria;
+	}
+
+	public void setDiaria(Integer diaria) {
+		this.diaria = diaria;
+	}
+
+	public static class ComparacaoPlacas {
+		public static void main(String[] args) {
+
+			System.out.println("A hora custa R$20,00 \n");
+
+			System.out.println("Informe a placa: \n");
+			Scanner placa1 = new Scanner(System.in);
+			placaA = (int) placa1.nextDouble();
+
+			System.out.println("Informe o horario de chegada: \n");
+			Scanner entrada = new Scanner(System.in);
+			horarioEntrada = (int) entrada.nextInt();
+
+			System.out.println("Informe o horario de saída: \n");
+			Scanner saida = new Scanner(System.in);
+			horarioSaida = (int) saida.nextInt();
+
+			int calculo = (horarioSaida - horarioEntrada );
+			
+			int calculoHora = Math.abs(calculo);
+			
+				if (horarioEntrada >= 8  &&  horarioEntrada <= 17 ) {
+					System.out.println("Dentro da cobrança diária normal");
+			
+				
+				System.out.print("O carro entrou as: " + horarioEntrada + "\n");
+				System.out.println("O total é: " + (calculoHora *20) );
+				}	
+				else if (horarioEntrada > 17 || horarioEntrada < 8 ){
+					System.out.println("Valor cheio R$100,");	
+				}
+				
+		    placa1.close();
+			entrada.close();
+			saida.close();
+
+			if (horarioSaida > 17) {
+				System.out.println("Será cobrado a diária total, no valor de R$100,00");
+			}
+
+		}
+
+	}
+
+}
