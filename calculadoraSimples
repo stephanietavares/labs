@@ -20,7 +20,7 @@ public class Calculo {
 			operacao = input.nextShort();
 
 			if (operacao == 0) {
-				System.out.println("Bye bye!");
+				System.out.println("Tchau!");
 				break;
 			}
 
