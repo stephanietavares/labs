@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*importando o conteúdo do _variaveis.scss */
+body {
+  margin: 0;
+  font-family: "Teko", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  text-transform: uppercase;
+}
+
+h1.chamada {
+  color: #ffffff;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: normal;
+  font-family: "Alfa Slab One", cursive;
+  margin: 0;
+}
+
+h2 {
+  color: #cccccc;
+  font-size: 70px;
+  margin: 70px 0;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: normal;
+  letter-spacing: 3px;
+  /*Chamando o mixim */
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: normal;
+  letter-spacing: 3px;
+  /*chamando o mixim /2 */
+}
+
+h4 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.banner {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.topo {
+  margin-bottom: 70px;
+}
+
+.menu a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 5px 20px 0px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #b91f33;
+}
+
+@media screen and (max-width: 768px) {
+  .menu a {
+    display: block;
+    padding: 0;
+  }
+}
+
+.btn-1 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 40px 0px 40px;
+  display: inline-block;
+  transition: 0.5s;
+  border: solid 2px #b91f33;
+}
+
+.btn-1:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.btn-2 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 40px 0px 40px;
+  display: inline-block;
+  transition: 0.5s;
+  background-color: #b91f33;
+}
+
+.btn-2:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.btn-3 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 40px 0px 40px;
+  display: inline-block;
+  transition: 0.5s;
+  background-color: #000000;
+}
+
+.btn-3:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.bg-primario {
+  background-color: #b91f33;
+}
+
+.bg-cinza {
+  background-color: #cccccc;
+}
+
+.plano {
+  color: #000000;
+  padding: 30px;
+}
+
+footer p {
+  margin: 70px 0;
+  color: #cccccc;
+  background-color: #b91f33;
+  padding: 30px;
+}
+
+footer img {
+  margin: 0 10px;
+}
