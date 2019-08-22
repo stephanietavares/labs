@@ -1,0 +1,6 @@
+$cor-primaria: #b91f33;
+$cor-secundaria: #cccccc;
+$branco: #ffffff;
+$preto: #000000;
+$font-primaria: 'Teko', sans-serif;
+$font-secundaria: "Alfa Slab One", cursive;
