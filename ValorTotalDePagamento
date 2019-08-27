@@ -1,0 +1,49 @@
+package exercicioUdemy;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioCinco {
+
+	/*
+	 * Fazer um programa para ler o código de uma peça 1, o número de peças 1, o
+	 * valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2 e
+	 * o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago
+	 */
+
+	
+	
+	
+	public static void main(String[] args) {
+
+		
+		System.out.println("=========================================================================================");
+		System.out.println("Calculando numero de peças, valor unitário e código, mostrando valor unitário a ser pago");
+		System.out.println("=========================================================================================");
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int codigo1, codigo2, quantidade1, quantidade2;
+		double preco1, preco2, total;
+
+		System.out.println("Informe o primeiro código: ");
+		codigo1 = sc.nextInt();
+		System.out.println("Informe a segunda quantidade: ");
+		quantidade1 = sc.nextInt();
+		System.out.println("Informe o primeiro preço");
+		preco1 = sc.nextDouble();
+		System.out.println("Informe o segundo código: ");
+		codigo2 = sc.nextInt();
+		System.out.println("Informe a segunda quantidade");
+		quantidade2 = sc.nextInt();
+		System.out.println("Informe o segundo preço");
+		preco2 = sc.nextDouble();
+
+		total = preco1 * quantidade1 + preco2 * quantidade2;
+
+		System.out.printf("Total: R$ %.2f%n", total);
+
+		sc.close();
+	}
+}
