@@ -1,0 +1,36 @@
+package exercicioUdemy;
+
+import java.util.Scanner;
+
+public class ExercicioUm {
+
+	
+/*	Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma mensagem explicativa */
+	
+	
+	static int var1, var2, soma;
+	
+	public static void main(String[]args) {
+		
+		System.out.println("===============================================================================");
+		System.out.println("Nossa programa irá realizar a leitura de dois numeros inteiros e mostrar a soma");
+		System.out.println("===============================================================================");
+		
+		System.out.println("Informe o primeiro valor:");
+		Scanner sc = new Scanner(System.in);
+				
+		var1 = sc.nextInt();
+
+		System.out.println("Informe o segundo valor: \n");
+		var2 = sc.nextInt();
+		
+		soma = var1 + var2;
+		
+		System.out.println("O resultado da soma dos dois valores é: " + soma);
+		
+		
+	}
+	
+	
+	
+}
