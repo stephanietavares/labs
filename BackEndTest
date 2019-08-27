@@ -1,0 +1,28 @@
+package entity;
+
+import java.util.Scanner;
+
+public class Information {
+
+	private static String nome, email;
+	private static Integer idade;
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		String cadastro = sc.toString();
+		System.out.println("Informe seu nome, email e idade respectivamente: ");
+		nome = sc.next();
+		email = sc.next();
+		idade = sc.nextInt();
+
+		sc.close();
+
+		System.out.println(nome);
+		System.out.println(email);
+		System.out.println(idade);
+
+	}
+
+}
