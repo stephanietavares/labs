@@ -29,6 +29,7 @@ de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D). 
 		System.out.println("Informe o valor de D: ");
 		d = sc.nextInt();
 		
+		sc.close();
 		diferenca = (a * b - c * d);
 		
 		System.out.println("A diferença dos produtos é: \n" + diferenca);
