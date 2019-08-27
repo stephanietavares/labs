@@ -1,0 +1,29 @@
+package exercicioUdemy;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioDois {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		System.out.println("=============================");
+		System.out.println("Calculando a área de um raio");
+		System.out.println("=============================");
+		
+		double R, A, pi = 3.14159;
+		
+		System.out.println("Informe um valor: ");
+		
+		Scanner sc = new Scanner(System.in);
+	    R = sc.nextDouble();
+
+	    A = pi * R * R;
+
+	    System.out.printf("A área do raio foi: \n" + "A=%.4f%n", A);
+
+		sc.close();
+	}
+}
