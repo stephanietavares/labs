@@ -24,6 +24,8 @@ public class ExercicioUm {
 		System.out.println("Informe o segundo valor: \n");
 		var2 = sc.nextInt();
 		
+		sc.close();
+		
 		soma = var1 + var2;
 		
 		System.out.println("O resultado da soma dos dois valores é: " + soma);
