@@ -2,6 +2,7 @@
 	<head>
 		<title>Calculadora</title>
 
+		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <style>
@@ -15,7 +16,7 @@
       }
 
       .btn {
-        width: 60px;
+        width: 60px; 
         height: 50px;
         margin: 5px;
         box-shadow: 1px 1px 1px #000;
@@ -84,7 +85,7 @@
             </div>
 
             <div class="row" style="margin-top: -60px">
-              <button  onclick="calcular('acao',0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
+              <button  onclick="calcular('valor',0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
               <button onclick="calcular('acao','.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
             </div>
 
